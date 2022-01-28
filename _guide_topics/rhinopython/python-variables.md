@@ -92,7 +92,7 @@ def function2():
     g_var = 'False'
     print 'inside the function var is ', g_var
 
-ex2()
+function2()
 print 'outside the function var is ', g_var
 ```
 The example above will create a `Global` variable named `g_var`.  When dropping in the `function2` function, there will be a second `local` variable created named `g_var` with a different value. The proper way to work with a global variable is to be very explicit with the `global` statement in the `local` scope:
